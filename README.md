@@ -12,26 +12,25 @@
   
 `2.UML: Class Diagram `
 
-[]()
+
 
 `3.รายละเอียดของแต่ละคลาส `
 
 Account (Superclass) 
 
-   Properties: 
-        balance: ยอดเงินคงเหลือในบัญชี 
-   Methods: 
-        Account(double balance): คอนสตรัคเตอร์สำหรับกำหนดยอดเงินเริ่มต้น 
-        deposit(double amount): เพิ่มยอดเงินในบัญชี 
-        withdraw(double amount): ถอนเงินจากบัญชี 
-        getBalance(): แสดงยอดเงินคงเหลือในบัญชี 
-        
-SavingsAccount (Subclass) 
-
-    Properties: 
+   - Properties: balance (ยอดเงินคงเหลือในบัญชี)
+   - Methods: 
+        - Account(double balance): คอนสตรัคเตอร์สำหรับกำหนดยอดเงินเริ่มต้น 
+        - deposit(double amount): เพิ่มยอดเงินในบัญชี 
+        - withdraw(double amount): ถอนเงินจากบัญชี 
+        - getBalance(): แสดงยอดเงินคงเหลือในบัญชี 
+     
+ SavingsAccount (Subclass)  
+ 
+    - Properties: 
           interestRate: อัตราดอกเบี้ยเงินฝาก (เพิ่มเติมจาก Class แม่) 
     Methods: 
-          SavingsAccount(double balance, double interestRate): คอนสตรัคเตอร์สำหรับกำหนดยอดเงินและอัตราดอกเบี้ย 
+          SavingsAccount(double balance, double interestRate) : คอนสตรัคเตอร์สำหรับกำหนดยอดเงินและอัตราดอกเบี้ย 
           applyInterest(): คำนวณดอกเบี้ยและเพิ่มในยอดเงิน 
         
 CheckingAccount (Subclass) 
@@ -44,7 +43,7 @@ CheckingAccount (Subclass)
 
 `4.การรับค่าจากผู้ใช้เพื่อนำไปสร้างออบเจกต์ให้สมบูรณ์`
 
-    ในการสร้างออบเจกต์จาก Account (Class แม่) และ SavingsAccount หรือ CheckingAccount (Class ลูก) จำเป็นต้องรับค่าดังนี้: 
+    - ในการสร้างออบเจกต์จาก Account (Class แม่) และ SavingsAccount หรือ CheckingAccount (Class ลูก) จำเป็นต้องรับค่าดังนี้: 
     
     Account (Class แม่) ต้องรับค่า: 
     
