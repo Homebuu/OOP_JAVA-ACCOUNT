@@ -1,4 +1,4 @@
-public class AccountSystem {
+public class main {
     public static void main(String[] args) {
 
         SavingsAccount savings = new SavingsAccount();
